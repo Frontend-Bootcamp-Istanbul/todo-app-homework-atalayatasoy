@@ -13,7 +13,7 @@ export const todoReducer = (state= [], action)  => {
                    }
                    return todo;
                });
-            case "DEL_TODO":
+            case "DELETE_TODO":
                 return state.filter((todo) => {
                     return todo.id !== action.payload
                 })
