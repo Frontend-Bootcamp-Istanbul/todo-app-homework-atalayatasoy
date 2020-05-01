@@ -7,7 +7,7 @@ const TodoAppList = ({todos}) => {
         <div>
             {
                 todos.map((todo) => {
-                    return <TodoAppListItem {...todo} />
+                    return <TodoAppListItem {...todo} key={todo.id} />
                 })
             }
         </div>
